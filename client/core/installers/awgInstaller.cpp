@@ -54,6 +54,7 @@ void AwgInstaller::generateAwgParameters(AwgServerConfig &serverConfig)
     serverConfig.transportPacketMagicHeader = protocols::awg::defaultTransportPacketMagicHeader;
 
     serverConfig.headerProtectionKey = WireguardConfigurator::genClientKeys().clientPrivKey;
+    serverConfig.contentPaddingAddition = protocols::awg::defaultContentPaddingAddition;
     serverConfig.rekeyAfterTime = protocols::awg::defaultRekeyAfterTime;
     serverConfig.rekeyTimeout = protocols::awg::defaultRekeyTimeout;
     serverConfig.rejectAfterTime = protocols::awg::defaultRejectAfterTime;
