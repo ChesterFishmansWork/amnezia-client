@@ -1138,6 +1138,9 @@ jobs:
           AMNEZIA_TEST_SERVICE_TYPE: ${{ secrets.AMNEZIA_TEST_SERVICE_TYPE }}
           AMNEZIA_TEST_SERVICE_PROTOCOL: ${{ secrets.AMNEZIA_TEST_SERVICE_PROTOCOL }}
           AMNEZIA_TEST_COUNTRY_CODE: ${{ secrets.AMNEZIA_TEST_COUNTRY_CODE }}
+          AMNEZIA_TEST_SERVER_COUNTRY_CODE: ${{ secrets.AMNEZIA_TEST_SERVER_COUNTRY_CODE }}
+          AMNEZIA_TEST_API_KEY: ${{ secrets.AMNEZIA_TEST_API_KEY }}
+          AMNEZIA_TEST_INSTALLATION_UUID: ${{ secrets.AMNEZIA_TEST_INSTALLATION_UUID }}
         shell: bash
         run: |
           QT_ROOT="${{ runner.temp }}/Qt/${{ env.QT_VERSION }}/gcc_64"
@@ -1321,6 +1324,9 @@ jobs:
           AMNEZIA_TEST_SERVICE_TYPE: ${{ secrets.AMNEZIA_TEST_SERVICE_TYPE }}
           AMNEZIA_TEST_SERVICE_PROTOCOL: ${{ secrets.AMNEZIA_TEST_SERVICE_PROTOCOL }}
           AMNEZIA_TEST_COUNTRY_CODE: ${{ secrets.AMNEZIA_TEST_COUNTRY_CODE }}
+          AMNEZIA_TEST_SERVER_COUNTRY_CODE: ${{ secrets.AMNEZIA_TEST_SERVER_COUNTRY_CODE }}
+          AMNEZIA_TEST_API_KEY: ${{ secrets.AMNEZIA_TEST_API_KEY }}
+          AMNEZIA_TEST_INSTALLATION_UUID: ${{ secrets.AMNEZIA_TEST_INSTALLATION_UUID }}
         shell: cmd
         run: |
           rem Without an attached console (GitHub runner), QTest sends its output to
@@ -1436,6 +1442,9 @@ jobs:
           AMNEZIA_TEST_SERVICE_TYPE: ${{ secrets.AMNEZIA_TEST_SERVICE_TYPE }}
           AMNEZIA_TEST_SERVICE_PROTOCOL: ${{ secrets.AMNEZIA_TEST_SERVICE_PROTOCOL }}
           AMNEZIA_TEST_COUNTRY_CODE: ${{ secrets.AMNEZIA_TEST_COUNTRY_CODE }}
+          AMNEZIA_TEST_SERVER_COUNTRY_CODE: ${{ secrets.AMNEZIA_TEST_SERVER_COUNTRY_CODE }}
+          AMNEZIA_TEST_API_KEY: ${{ secrets.AMNEZIA_TEST_API_KEY }}
+          AMNEZIA_TEST_INSTALLATION_UUID: ${{ secrets.AMNEZIA_TEST_INSTALLATION_UUID }}
         shell: bash
         run: |
           QT_ROOT="$RUNNER_TEMP/Qt/$QT_VERSION/macos"
